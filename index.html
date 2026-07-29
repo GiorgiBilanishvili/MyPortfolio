@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <link rel="shortcut icon" href="img/favicin.webp" type="image/x-icon" />
+
+    <title>Bil Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .menu-icon {
+        filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(0deg);
+      }
+      .github-icon {
+        filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(0deg);
+        transition: filter 0.6s ease;
+      }
+
+      .github-icon:hover {
+        filter: brightness(0) invert(1);
+      }
+      .fb-icon {
+        filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(0deg);
+        transition: filter 0.6s ease;
+      }
+      .fb-icon:hover {
+        filter: brightness(0) invert(1);
+      }
+      .linkedin-icon {
+        filter: invert(20%) sepia(100%) saturate(5000%) hue-rotate(0deg);
+        transition: filter 0.6s ease;
+      }
+      .linkedin-icon:hover {
+        filter: brightness(0) invert(1);
+      }
+    </style>
+  </head>
+  <body class="text-white bg-black pt-20 pb-20">
+    <header
+      class="fixed top-0 left-0 w-full flex items-center justify-center p-5 gap-20 bg-black/80 z-50"
+    >
+      <a href="index.html">
+        <h1 class="text-xl font-bold xl:text-4xl">
+          Giorgi
+          <span
+            class="bg-gradient-to-r from-red-700 to-red-400 bg-clip-text text-transparent"
+            >Bilanishvili</span
+          >
+        </h1>
+      </a>
+      <nav class="hidden xl:flex xl:flex-row xl:text-2xl xl:ml-40">
+        <ul class="flex flex-row gap-12">
+          <li class="hover:text-red-500"><a href="#HOME">Home</a></li>
+          <li class="hover:text-red-500"><a href="#About">About</a></li>
+          <li class="hover:text-red-500"><a href="#Services">Services</a></li>
+          <li class="hover:text-red-500"><a href="#Projects">Projects</a></li>
+          <li class="hover:text-red-500"><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        id="burger_menu_icon"
+        class="menu-icon w-10 cursor-pointer xl:hidden"
+        src="img/menu.png"
+        alt="img"
+      />
+
+      <img id="close_icon" class="hidden w-10" src="img/close.png" alt="img" />
+    </header>
+
+    <!-- BURGER MENU -->
+
+    <div
+      id="burger_menu"
+      class="fixed top-20 left-0 w-full bg-gradient-to-r from-red-700/95 to-red-400/95 text-center py-20 text-2xl opacity-0 -translate-y-5 pointer-events-none transition-all duration-500 ease-in-out text-black z-[9998]"
+    >
+      <ul class="space-y-8">
+        <li><a href="#HOME">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HOME section -->
+
+    <section
+      id="HOME"
+      class="px-10 flex flex-col justify-center items-center xl:flex xl:flex-row xl:gap-40 xl:justify-center xl:items-center xl:mt-10"
+    >
+      <div class="">
+        <img
+          class="w-72 h-72 rounded-full object-cover border-4 xl:w-[24rem] xl:h-[24rem] border-red-500 hover:border-8"
+          src="img/gios img.jpg"
+          alt="img"
+        />
+      </div>
+      <div
+        class="px-10 flex flex-col justify-center items-center xl:items-start"
+      >
+        <h2 class="text-4xl mt-5 font-bold">
+          Hi it's
+          <span
+            class="bg-gradient-to-r from-red-700 to-red-400 bg-clip-text text-transparent"
+            >Giorgi</span
+          >
+        </h2>
+        <h3 class="text-2xl font-bold mt-3">
+          I am A
+          <span
+            class="bg-gradient-to-r from-red-700 to-red-400 bg-clip-text text-transparent"
+            >Web Developer</span
+          >
+        </h3>
+        <p class="font-caveat mt-3 text-xl xl:w-96 xl:text-2xl">
+          I am a passionate Web Developer who loves creating modern, responsive,
+          and user-friendly websites. I am constantly learning new technologies
+          and improving my skills to build better digital experiences. My goal
+          is to turn ideas into functional and beautiful solutions.
+        </p>
+
+        <div id="social_media_icons" class="flex mt-3 gap-5">
+          <a href="https://github.com/GiorgiBilanishvili" target="_blank">
+            <img class="github-icon w-10" src="img/github-logo.png" alt="img" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/giorgi.bilanishvili.79"
+            target="_blank"
+          >
+            <img class="fb-icon w-10" src="img/facebook.png" alt="img" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/giorgi-bilanishvili-756a6927b/"
+            target="_blank"
+          >
+            <img class="linkedin-icon w-10" src="img/linkedin.png" alt="img" />
+          </a>
+        </div>
+
+        <div id="two-btns" class="mt-5 flex gap-5">
+          <a href="#Contact">
+            <button
+              class="bg-gradient-to-r from-red-700 to-red-400 text-black px-8 py-2 rounded-full font-bold cursor-pointer hover:from-white hover:to-white transition duration-300"
+            >
+              Hire
+            </button>
+          </a>
+          <a href="#Contact">
+            <button
+              class="border-2 border-red-500 text-red-500 px-8 py-2 rounded-4xl font-bold cursor-pointer hover:border-white hover:text-white transition duration-300"
+            >
+              Contact
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT section -->
+
+    <section
+      id="About"
+      class="px-10 flex flex-col justify-center items-center mt-5 xl:flex xl:flex-row-reverse xl:gap-26 xl:justify-center xl:items-center xl:mt-20"
+    >
+      <div>
+        <img
+          class="rounded-2xl w-72 h-64 xl:w-[22rem] xl:h-[22rem]"
+          src="img/about me img (gio).jpg"
+          alt="img"
+        />
+      </div>
+
+      <div class="px-10 flex flex-col justify-center items-center xl:items-end">
+        <h2 class="text-4xl mt-5 font-bold">
+          About
+          <span
+            class="bg-gradient-to-r from-red-700 to-red-400 bg-clip-text text-transparent"
+            >Me</span
+          >
+        </h2>
+        <p class="font-caveat mt-3 text-xl xl:text-2xl xl:w-80 xl:text-right">
+          I am a web developer from Georgia, with many years of experience. I am
+          proficient in Html, Css, Js, Tailwind, React, Php, Wordpress and have
+          done many projects using these technologies. I am educated at
+          Skillwill Academy and the international platform FrontendMentor.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES section -->
+
+    <section
+      id="Services"
+      class="px-10 flex flex-col justify-center items-center mt-5 xl:mt-20"
+    >
+      <h2 class="text-4xl mt-5 font-bold">Services</h2>
+
+      <div
+        id="My_Services"
+        class="bg-red-500 text-black rounded-2xl mt-5 xl:mt-10"
+      >
+        <div
+          id="Fronten_development"
+          class="flex w-80 md:w-[100%] xl:w-[50rem] cursor-pointer flex-col justify-center items-center p-5 hover:bg-black hover:text-red-500 hover:border hover:border-red-500 hover:rounded-2xl transition-all duration-[1000ms] ease-in-out"
+        >
+          <span class="text-4xl font-bold">< ></span>
+          <h2 class="text-4xl text-center font-bold">Frontend Development</h2>
+          <p class="mt-5 font-caveat text-xl xl:text-3xl">
+            I create modern, responsive, and user-friendly websites that help
+            businesses and individuals build a strong online presence. I focus
+            on clean design, smooth user experience, and high-quality code to
+            deliver fast and reliable web solutions. <br />
+            My services include: • Responsive Website Development <br />
+            • Frontend Development with HTML, CSS, JavaScript, React, and
+            Tailwind CSS <br />
+            • Modern UI/UX Implementation <br />
+            • Website Optimization and Performance Improvement <br />
+            • Website Maintenance and Updates I transform ideas into functional
+            and visually appealing digital experiences using modern frontend
+            technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS Section -->
+
+    <section
+      id="Projects"
+      class="px-10 flex flex-col justify-center items-center mt-5 xl:mt-20 xl:px-80"
+    >
+      <h2 class="text-4xl mt-5 font-bold">Projects</h2>
+
+      <div
+        id="All_Project"
+        class="flex flex-col justify-center xl:flex-row xl:flex-wrap xl:gap-10 xl:mt-10"
+      >
+        <div
+          id="Project_1"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img
+            class="w-72 h-64"
+            src="img/space tourism vebsite project.jpg"
+            alt="img"
+          />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Space tourism website
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Space tourism website using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_SpaceTorizmWebsite"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_SpaceTorizmWebsite/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_2"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img
+            class="w-72 h-64"
+            src="img/e commerce product page img.jpg"
+            alt="img"
+          />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Ecomerce Product Page
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is an Ecomerce Product Page using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_EcomerceProductPage"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_EcomerceProductPage/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_3"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img class="w-72 h-64" src="img/booklmark page img.jpg" alt="img" />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Bookmark Landing Page
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Bookmark Landing Page using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_BookmarkLandingPage"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_BookmarkLandingPage/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_4"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img class="w-72 h-64" src="img/room homepage img.jpg" alt="img" />
+          <h2 class="text-3xl text-center mt-3 font-bold">Room Homepage</h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Room Homepage using html tailwind js. with responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_RoomHomePage"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_RoomHomePage/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_5"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img
+            class="w-72 h-64"
+            src="img/loopstudio landing page img.jpg"
+            alt="img"
+          />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Loopstudios Landing Page
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Loopstudios Landing Page using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_LoopstudiosLandingPage"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_LoopstudiosLandingPage/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_6"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img
+            class="w-72 h-64"
+            src="img/Tip calculator app img.jpg"
+            alt="img"
+          />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Tip calculator app
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Tip Calculator app using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_TipCounter"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_TipCounter/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_7"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img
+            class="w-72 h-64"
+            src="img/Time tracking dashboard img.jpg"
+            alt="img"
+          />
+          <h2 class="text-3xl text-center mt-3 font-bold">
+            Time Tracking Dashboard
+          </h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Time Tracking Dashboard using html tailwind js. with
+            responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_TimeTrackingDashboard"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_TimeTrackingDashboard/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_8"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img class="w-72 h-64" src="img/Tic Tac Toe img.jpg" alt="img" />
+          <h2 class="text-3xl text-center mt-3 font-bold">Tic Tac Toe Game</h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Tic Tac Toe Game using html tailwind js. with responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_TicTacToeGame"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_TicTacToeGame/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+
+        <div
+          id="Project_9"
+          class="cursor-pointer border border-red-500 rounded-2xl p-5 mt-5 flex flex-col justify-center w-80 md:w-[100%] xl:w-80 md:flex md:flex-col md:items-center hover:border hover:shadow-[0_0_80px_rgba(239,68,68,0.8)] transition-all duration-200 ease-in-out"
+        >
+          <img class="w-72 h-64" src="img/Contact form img.jpg" alt="img" />
+          <h2 class="text-3xl text-center mt-3 font-bold">Contact Form</h2>
+          <p class="font-caveat text-xl text-center mt-3">
+            This is a Contact Form using html tailwind js. with responsive.
+          </p>
+          <a
+            href="https://github.com/GiorgiBilanishvili/FrontendMentor_Contact-Form-Main"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+          >
+            Review Project
+          </a>
+
+          <a
+            href="https://giorgibilanishvili.github.io/FrontendMentor_Contact-Form-Main/"
+            target="_blank"
+            class="bg-red-500 text-black font-bold px-5 mt-3 rounded-2xl text-center py-2"
+            >Live Link</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT section -->
+
+    <section
+      id="Contact"
+      class="px-10 flex flex-col justify-center items-center mt-5 xl:mt-20"
+    >
+      <h2 class="text-4xl mt-5 font-bold xl:text-5xl">
+        Contact
+        <span
+          class="bg-gradient-to-r from-red-700 to-red-400 bg-clip-text text-transparent xl:text-5xl"
+          >Me</span
+        >
+      </h2>
+      <p class="mt-5 xl:text-3xl">
+        E-mail:
+        <a
+          href="mailto:giobilana@gmail.com"
+          class="text-red-500 hover:text-white transition duration-300 xl:text-3xl"
+        >
+          giobilana@gmail.com
+        </a>
+      </p>
+
+      <p class="mt-5 xl:text-3xl">
+        WhatsApp:
+        <a
+          href="https://wa.me/995598699007"
+          target="_blank"
+          class="text-red-500 hover:text-white transition duration-300 xl:text-3xl"
+        >
+          +995 598 699 007
+        </a>
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
