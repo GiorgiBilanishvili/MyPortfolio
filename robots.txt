@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giorgibilanishvili.github.io/MyPortfolio/sitemap.xml
